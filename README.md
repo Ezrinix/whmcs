@@ -15,7 +15,7 @@ The WHMCS.js is a comprehensive npm package for interacting with the WHMCS API, 
 To install the package, run:
 
 ```bash
-npm install @ezrinix/whmcs.js
+npm install @ezrinix/whmcs
 ```
 
 ## License
