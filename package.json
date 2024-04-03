@@ -1,0 +1,23 @@
+{
+    "name": "@ezrinix/whmcs",
+    "version": "1.0.4",
+    "main": "whmcs.js",
+    "keywords": [
+        "whmcs",
+        "hosting",
+        "billing",
+        "whmcs-node",
+        "node-whmcs",
+        "whmcs-api",
+        "whmcsapi"
+      ],
+    "author": "Ezrinix",
+    "license": "GPL-3.0-only",
+    "dependencies": {
+        "axios": "^1.6.8"
+    },
+    
+    "description": "A node.js api wrapper for the popular billing platform whmcs.",
+    
+    "repository":"https://github.com/ezrinix/whmcs"
+}
