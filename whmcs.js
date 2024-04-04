@@ -53,7 +53,7 @@ class WHMCSClient {
         return promise;
     }
     get getAppUrl() {
-        return this.appURL
+        return this.#appURL
     }
 
     get getAppIdentifier() {
@@ -63,9 +63,9 @@ class WHMCSClient {
     get getAppSecret() {
         return this.#appSecret;
     }
-    
+
     get getUserAgent() {
-        return this.userAgent;
+        return this.#userAgent;
     }
 }
 
