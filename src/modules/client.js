@@ -268,7 +268,7 @@ class Clients {
     UpdateContact(params = UpdateContactOptions, callback) {
         return this.#ctx.callAPI('UpdateContact', params, callback);
     }
-}
+};
 
 
 module.exports = {
@@ -289,4 +289,4 @@ module.exports = {
     GetEmailsOptions,
     UpdateClientOptions,
     UpdateContactOptions
-}
+};
