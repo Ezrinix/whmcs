@@ -6,6 +6,10 @@ class WHMCSClient {
     #appIdentifier;
     #appSecret;
     #userAgent;
+    orders;
+    users;
+    system;
+    clients;
     constructor({ appURL, appIdentifier, appSecret, userAgent = 'whmcsjs/1.0' }) {
         this.#appURL = appURL;
         this.#appIdentifier = appIdentifier;
