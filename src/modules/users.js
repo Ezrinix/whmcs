@@ -41,7 +41,7 @@ const UpdateUserOptions = {
     language: ""
 };
 
-class Users {
+module.exports = class Users {
     #ctx;
     constructor(ctx) {
         this.#ctx = ctx;
@@ -74,14 +74,4 @@ class Users {
     UpdateUser(params = UpdateUserOptions, callback) {
         return this.#ctx.callAPI('UpdateUser', params, callback);
     }
-};
-
-module.exports = {
-    Users, 
-    AddUserOptions,
-    DeleteUserClientOptions,
-    GetPermissionsListOptions,
-    UpdateUserPermissionsOptions,
-    GetUsersOptions,
-    UpdateUserOptions
 };

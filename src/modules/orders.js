@@ -83,7 +83,7 @@ const GetOrderStatusesOptions = {
     action: ""
 };
 
-class Orders {
+module.exports = class Orders {
     #ctx;
     constructor(ctx) {
         this.#ctx = ctx;
@@ -112,15 +112,4 @@ class Orders {
     GetOrderStatuses(params= GetOrderStatusesOptions, callback) {
         return this.#ctx.callAPI('GetOrderStatuses', params, callback);
     }
-};
-
-
-module.exports = {
-    Orders,
-    AddOrderOptions,
-    AcceptOrderOptions,
-    CancelOrderOptions,
-    DeleteOrderOptions,
-    GetOrdersOptions,
-    GetOrderStatusesOptions
 };

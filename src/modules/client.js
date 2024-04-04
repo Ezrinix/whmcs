@@ -195,7 +195,7 @@ const UpdateContactOptions = {
 }
 
 
-class Clients {
+module.exports = class Clients {
     #ctx;
     constructor(ctx) {
         this.#ctx = ctx;
@@ -268,25 +268,4 @@ class Clients {
     UpdateContact(params = UpdateContactOptions, callback) {
         return this.#ctx.callAPI('UpdateContact', params, callback);
     }
-};
-
-
-module.exports = {
-    Clients,
-    AddClientOptions,
-    AddContactOptions,
-    CloseClientOptions,
-    DeleteClientOptions,
-    DeleteContactOptions,
-    GetCancelledPackagesOptions,
-    GetClientsOptions,
-    GetClientsGroupsOptions,
-    GetClientProductsOptions,
-    CreateClientInviteOptions,
-    GetClientAddonsOptions,
-    GetClientDomainsOptions,
-    GetContactsOptions,
-    GetEmailsOptions,
-    UpdateClientOptions,
-    UpdateContactOptions
 };
